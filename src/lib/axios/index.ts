@@ -6,7 +6,8 @@ interface FetchInstance {
     <T>(config: AxiosRequestConfig) : Promise<T>
 }
 export const fetch: AxiosInstance & FetchInstance =  axios.create({
-    baseURL: BASE_URL
+    baseURL: BASE_URL,
+    timeout: 10000,
 })
 
 export interface Response<T> {
