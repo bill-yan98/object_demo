@@ -4,7 +4,9 @@ import router from './router'
 import store from './store'
 import ViewUI from 'view-design'
 import 'view-design/dist/styles/iview.css'
+import G6 from '@antv/g6'
 
+Vue.prototype.$G6 = G6
 Vue.config.productionTip = false
 Vue.use(ViewUI)
 

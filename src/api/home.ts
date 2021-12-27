@@ -12,7 +12,7 @@ export interface UserInfoRes {
 }
 
 export const getUserInfo = (data: UserInfoReq) => fetch<Response<UserInfoRes>>({
-    url: '/home/userInfo',
-    method: 'post',
-    data,
+  url: '/home/userInfo',
+  method: 'post',
+  data
 })

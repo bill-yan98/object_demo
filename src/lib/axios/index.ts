@@ -1,13 +1,13 @@
 import axios, { AxiosInstance, AxiosRequestConfig } from 'axios'
 
-const BASE_URL =  process.env.VUE_APP_BASE_URL
+const BASE_URL = process.env.VUE_APP_BASE_URL
 
 interface FetchInstance {
     <T>(config: AxiosRequestConfig) : Promise<T>
 }
-export const fetch: AxiosInstance & FetchInstance =  axios.create({
-    baseURL: BASE_URL,
-    timeout: 10000,
+export const fetch: AxiosInstance & FetchInstance = axios.create({
+  baseURL: BASE_URL,
+  timeout: 10000
 })
 
 export interface Response<T> {
